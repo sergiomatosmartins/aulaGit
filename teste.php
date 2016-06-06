@@ -21,32 +21,21 @@ $cliente = new Cliente();
     <tbody>
 
     <div class="row">
-        <div class="col-md-2"><strong>Codigo</strong></div>
-        <div class="col-md-3 "><strong><?php echo $cliente->getCodigo($x)?></strong></div>
+        <div class="col-md-2">Codigo</div>
+        <div class="col-md-3 "><?php echo $cliente->getCodigo($x)?></div>
     </div>
     <div class="row">
-        <div class="col-md-2"><strong>Nome</strong></div>
+        <div class="col-md-2">Nome</div>
         <div class="col-md-3 "><?php echo $cliente->getNome($x)?></div>
     </div>
     <div class="row">
-        <div class="col-md-2"><strong>CPF</strong></div>
+        <div class="col-md-2">CPF</div>
         <div class="col-md-3 "><?php echo $cliente->getCPF($x)?></div>
     </div>
 
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">
-                    <img alt="Brand" src="...">
-                </a>
-            </div>
-        </div>
-    </nav>
 
     </tbody>
 </table>
-
-
 
 
 

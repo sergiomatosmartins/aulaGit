@@ -44,6 +44,7 @@ class Cliente extends Pessoa
     
     function ordenaTabClientes($ordem)
     {
+
         //sort($tabClientes);
         if($ordem == "D") {
             rsort($this->tabClientes);
@@ -54,6 +55,7 @@ class Cliente extends Pessoa
 
     function pegaIndice($codigo)
     {
+        
         if($codigo) {
             return $indice = array_search($codigo, array_column($this->tabClientes, 'codigo'));
         }
