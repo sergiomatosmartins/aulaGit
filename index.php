@@ -32,7 +32,7 @@ if ($p == "D"){
 <div class="container">
 
         <h3>  Curso de Programação Orientada a Objeto </h3>
-        <div class="well well-sm "><?php echo $titulo ?> </div>
+        <div class="well"><?php echo $titulo ?> </div>
 
         <?php
 
@@ -40,7 +40,7 @@ if ($p == "D"){
 
         ?>
 
-    <div class="well well-sm text-center ">
+    <div class="well well-sm col-md-12 text-center ">
                 <img src="marca1.JPG">
     </div>
 

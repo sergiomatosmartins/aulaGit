@@ -14,11 +14,15 @@ $numCliente = @$_GET['numCliente'];
 $cliente = new Cliente();
 
 if ($ordem == "A"){
-    $ordem = "D";
-    $ordemImagem = "\"glyphicon glyphicon-sort-by-attributes\"";
-}else {
-    $ordem = "A";
+
+    $inverteOrdem = "D";
     $ordemImagem = "\"glyphicon glyphicon-sort-by-attributes-alt\"";
+
+}else {
+
+    $inverteOrdem = "A";
+    $ordemImagem = "\"glyphicon glyphicon-sort-by-attributes\"";
+
 }
 
 $cliente->ordenaTabClientes($ordem);
@@ -38,7 +42,7 @@ $arrlength = count($cliente->getTabClientes());
         <thead>
         <tr>
             <th></th>
-            <th>Código<a href="?p=&ordem=<?php echo $ordem  ?>">
+            <th>Código<a href="?p=&ordem=<?php echo $inverteOrdem  ?>">
                     <span class= <?php echo $ordemImagem ?>></span></a></th>
             <th>Nome</th>
             <th>CPF</th>
@@ -52,7 +56,7 @@ $arrlength = count($cliente->getTabClientes());
             ?>
 
             <tr>
-                <td><a  href="?p=D&ordem=<?php echo $ordem  ?>&numCliente=<?php echo $x ?>">
+                <td><a  href="?p=D&ordem=<?php echo $ordem  ?>&numCliente=<?php echo $cliente->getCodigo($x)?>">
                         <span class="glyphicon glyphicon-file"></span></a></td>
 
                 <td><?php echo $cliente->getCodigo($x)?></td>
