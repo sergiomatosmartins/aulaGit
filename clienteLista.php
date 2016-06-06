@@ -41,6 +41,7 @@ $arrlength = count($cliente->getTabClientes());
     <table class="table table-hover">
         <thead>
         <tr>
+            
             <th></th>
             <th>Código<a href="?p=&ordem=<?php echo $inverteOrdem  ?>">
                     <span class= <?php echo $ordemImagem ?>></span></a></th>
@@ -56,6 +57,7 @@ $arrlength = count($cliente->getTabClientes());
             ?>
 
             <tr>
+
                 <td><a  href="?p=D&ordem=<?php echo $ordem  ?>&numCliente=<?php echo $cliente->getCodigo($x)?>">
                         <span class="glyphicon glyphicon-file"></span></a></td>
 
